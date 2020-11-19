@@ -60,14 +60,44 @@
   .filter__header-link .battery {
     background: none; }
 
-  .filter__header-link .car a,
-  .filter__header-link .big a,
-  .filter__header-link .shina a,
-  .filter__header-link .oil a,
+  .filter__header-link .car a {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    margin-left: 0;
+    padding: 0 10px; }
+
+  .filter__header-link .big a {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    margin-left: 0;
+    padding: 0 10px; }
+
+  .filter__header-link .shina a {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    margin-left: 0;
+    padding: 0 10px; }
+
+  .filter__header-link .oil a {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    margin-left: 0;
+    padding: 0 10px; }
+
   .filter__header-link .battery a {
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding-left: 0; } }
+    text-align: center;
+    padding: 0;
+    position: relative;
+    margin-left: 0;
+    padding: 0 10px; }
+
+  .filter__header-link {
+    width: auto;
+    padding: 0; } }
 @media screen and (max-width: 970px) {
   .head__wrapp ul {
     display: none; }
@@ -200,12 +230,25 @@
   .filter__body-price div {
     display: flex;
     flex-direction: column;
-    width: 100%; } }
+    width: 100%; }
+
+  .filter__body-price div {
+    height: auto; }
+
+  .filter__body-price div label {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 5px; } }
 @media screen and (max-width: 860px) and (max-width: 360px) {
   .form__search .form__option .form__option-search {
     width: 20px; } }
 @media screen and (max-width: 860px) and (max-width: 340px) {
   .info__contacts-number {
-    font-size: 13px; } }
+    font-size: 13px; }
+
+  .filter__body-btn button {
+    width: 115px;
+    height: 50px;
+    font-size: 11px; } }
 
 /*# sourceMappingURL=media.css.map */

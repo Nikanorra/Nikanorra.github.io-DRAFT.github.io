@@ -292,7 +292,7 @@
 						</div>
 
 						 <div class="form__option-category">
-							 <select class="form__category" name"category" id="categoryId">
+							 <select class="form__category" name="category" id="categoryId">
 								 <option hidden selected disabled>Все категории</option>
 								 <option value="1">Зимние</option>
 								 <option value="2">Летние</option>
@@ -399,17 +399,13 @@
 
 							<div class="filter__price">Цена</div>
 
+							<label for="priceFrom">
+								<input class="filter__body-price-input" type="number" placeholder="50" min="0" id="priceFrom" name="priceFrom">
+							</label>
 
-								<label for="priceFrom">
-									<input class="filter__body-price-input" placeholder="50" min="0" id="priceFrom" name="priceFrom">
-								</label>
-
-
-
-								<label for="priceFrom">
-									<input class="" placeholder="25000" min="0" id="priceFrom" name="priceFrom">
-								</label>
-
+							<label for="priceFrom">
+								<input type="number" placeholder="25000" min="0" id="priceFrom" name="priceFrom">
+							</label>
 
 						</div>
 
@@ -421,8 +417,8 @@
 						<button class="btn_clear">
 							<i class="fas fa-times"></i>
 							Очистить фильтр
-						</buttom>
-						<button class="btn_filter">Применить фильтр</buttom>
+						</button>
+						<button class="btn_filter">Применить фильтр</button>
 					</div>
 
 				</div>
