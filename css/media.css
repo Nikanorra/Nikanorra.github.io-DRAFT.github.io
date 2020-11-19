@@ -100,6 +100,10 @@
   .navigation .container {
     flex-direction: column; }
 
+  .navigation .container .col-3 {
+    width: 40%;
+    padding: 0; }
+
   .navigation .container .col-9 {
     width: 100%; }
 
@@ -132,12 +136,28 @@
 
   .info__contacts-phone {
     width: 100%;
-    line-height: 44px; } }
+    line-height: 44px; }
+
+  .filter__body .col-4 {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+
+  .filter__body-tab {
+    width: 50%; } }
 @media screen and (max-width: 860px) and (max-width: 510px) {
   .form__btn {
     font-size: 13px;
-    padding: 13px 26px; } }
+    padding: 13px 26px; }
+
+  .filter__body-btn button {
+    width: 140px;
+    height: 50px;
+    font-size: 12px; } }
 @media screen and (max-width: 860px) and (max-width: 450px) {
+  .navigation .container .col-3 {
+    width: 100%; }
+
   .info .container [class*="col-"] {
     width: 100%; }
 
@@ -151,7 +171,16 @@
 
   .form__btn {
     font-size: 10px;
-    padding: 13px 10px; } }
+    padding: 13px 10px; }
+
+  .filter__header-list {
+    font-size: 8px; }
+
+  .filter__body-tab {
+    width: 100%; } }
+@media screen and (max-width: 860px) and (max-width: 360px) {
+  .form__search .form__option .form__option-search {
+    width: 20px; } }
 @media screen and (max-width: 860px) and (max-width: 340px) {
   .info__contacts-number {
     font-size: 13px; } }
