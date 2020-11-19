@@ -177,6 +177,29 @@
     font-size: 8px; }
 
   .filter__body-tab {
+    width: 100%; }
+
+  .filter__body .filter__body-selects {
+    flex-direction: column;
+    width: 100%; }
+
+  .filter__body-selects div {
+    width: 100%;
+    margin-bottom: 10px; } }
+@media screen and (max-width: 860px) and (max-width: 370px) {
+  .filter__body-price {
+    flex-direction: column;
+    margin-top: 0; }
+
+  .filter__body-price div {
+    width: 100%; }
+
+  .selects-price-select {
+    margin-bottom: 10px; }
+
+  .filter__body-price div {
+    display: flex;
+    flex-direction: column;
     width: 100%; } }
 @media screen and (max-width: 860px) and (max-width: 360px) {
   .form__search .form__option .form__option-search {
