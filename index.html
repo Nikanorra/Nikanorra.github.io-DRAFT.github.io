@@ -1,24 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello!</title>
-    <link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+	<title>wezom-test</title>
+	<!-- <link rel="stylesheet" href="css/main.css"> -->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles-header-main.css">
+	<link rel="stylesheet" href="css/styles-logo.css">
+	<link rel="stylesheet" href="css/styles-forms.css">
+
+	<link rel="stylesheet" href="css/grid.css">
+	<!-- <link rel="stylesheet" href="css/media.css"> -->
+	<!-- <link rel="stylesheet" href="css/jquery-ui.css"> -->
+	<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-  <h1>Header.html</h1>
-  <div>
-    <h2>Sidebar.html</h2>
-</div>
-  <h1>Content.html</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<header class="head">
+	<div class="container">
+		<div class="head__wrapp">
 
-  <h1>sidebar1.html</h1>
+			<div class="head__burger"><i class="fas fa-bars"></i></div>
 
-  <h1>Footer.html</h1>
+		 	<nav class="head__nav">
+		 		<ul class="head__list">
+		 			<li class="head__link"><a href="#">Главная</a></li>
+		 			<li class="head__link"><a href="#">О компании</a></li>
+		 			<li class="head__link"><a href="#">ССылка 1</a></li>
+		 			<li class="head__link"><a href="#">ссылка 2 </a></li>
+		 			<li class="head__link"><a href="#">ссылка 3</a></li>
+		 		</ul>
+		 	</nav>
+
+			<button class="head__btn">
+				<img src="img/person.png" alt="">
+				<span>Вход</span>
+			</button>
+		</div>
+	</div>
+</header>
+
+<section class="info">
+	<div class="container">
+
+		<div class="col-3">
+			<div class="info__logo">
+				<img src="img/Test.png" alt="wezom">
+			</div>
+		</div>
+
+		<div class="col-6">
+			<div class="info__contacts">
+
+			<div class="info__contacts-wrapp">
+				<div class="info__contacts-number">+380 98 170 00 740</div>
+				<div class="info__contacts-number">+380 98 170 00 740</div>
+			</div>
+
+			<button class="info__contacts-phone">
+				<img src="img/phone.png" alt="icon-tel">
+				<span>Перезвонить мне</span>
+			</button>
+
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div class="info__special">
+				<button class="info__special-wrapp">
+					<a href="#">
+					<div class="info__special-control">
+
+						<div class="info__special-control-active">
+							<div class="info__special-control-active__img">
+								<img src="img/digitsbg05.png" alt="phone icon">
+							</div>
+							<div class="info__special-control-active__number">5</div>
+						</div>
+
+						<div class="info__special-control-icon">
+							<img src="img/comparison.png" alt="сравнение" height="36px">
+						</div>
+
+						<div class="info__special-control-text">сравнение</div>
+
+					</div>
+					</a>
+				</button>
+
+				<button class="info__special-wrapp">
+					<a href="#">
+					<div class="info__special-control">
+
+						<div class="info__special-control-active">
+							<div class="info__special-control-active__img">
+								<img src="img/digitsbg05.png" alt="message">
+							</div>
+							<div class="info__special-control-active__number">5</div>
+						</div>
+
+						<div class="info__special-control-icon">
+							<img src="img/favorite.png" alt="избранное" height="36px">
+						</div>
+
+						<div class="info__special-control-text">избранное</div>
+
+					</div>
+					</a>
+				</button>
+
+				<button class="info__special-wrapp"><a href="#">
+					<div class="info__special-control">
+
+						<div class="info__special-control-active">
+							<div class="info__special-control-active__img">
+								<img src="img/digitsbg05.png" alt="">
+							</div>
+							<div class="info__special-control-active__number">5</div>
+						</div>
+
+						<div class="info__special-control-icon">
+							<img src="img/basket.png" alt="корзина" height="36px">
+						</div>
+
+						<div class="info__special-control-text">корзина</div>
+
+					</div>
+					</a>
+				</button>
+
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section class="navigation">
+	<div class="container">
+		<div class="col-3">
+			<div class="menu">
+				<div class="menu__wrapper">
+					<div class="menu__head">
+						<div class="menu__head-btn">
+							<svg class="menu-bar" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;" xml:space="preserve">
+								<g id="Menu_1_">
+									<path d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
+										c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z"/>
+									<path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
+										S379.58,180.455,372.939,180.455z"/>
+									<path d="M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606
+										c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z"/>
+								</g>
+							</svg>
+							<!-- <img src="img/burger.png" alt="menu"> -->
+						</div>
+						<div class="menu__head-title">Меню</div>
+					</div>
+
+					<div class="menu__body">
+						<div class="menu__body-wrapper">
+							<nav class="menu__body-nav">
+								<ul class="menu__body-ul">
+									<li class="menu__body-list">
+										<a href="#">
+											<span>ССылка 1</span>
+										<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+											 xml:space="preserve">
+											<g>
+												<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+													c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+													c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+											</g>
+										</svg>
+									</a>
+								</li>
+
+									<li class="menu__body-list">
+										<a href="#">
+											<span>ССылка 2</span>
+										<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+											 xml:space="preserve">
+											<g>
+												<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+													c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+													c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+											</g>
+										</svg>
+									</a>
+								</li>
+
+									<li class="menu__body-list">
+										<a href="#">
+											<span>ССылка 3</span>
+										<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+											 xml:space="preserve">
+											<g>
+												<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+													c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+													c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+											</g>
+										</svg>
+										</a>
+									</li>
+
+									<li class="menu__body-list">
+										<a href="#">
+											<span>ССылка 4</span>
+										<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+											 xml:space="preserve">
+											<g>
+												<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+													c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+													c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+											</g>
+										</svg>
+									</a>
+								</li>
+
+									<li class="menu__body-list">
+										<a href="#">
+											<span>ССылка 5</span>
+										<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+											 xml:space="preserve">
+											<g>
+												<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+													c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+													c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+											</g>
+										</svg>
+									</a>
+								</li>
+
+									<li class="menu__body-list">
+										<a href="#">
+											<span>ССылка 6</span>
+										<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+											 xml:space="preserve">
+											<g>
+												<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+													c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+													c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+											</g>
+										</svg>
+									</a>
+								</li>
+
+									<li class="menu__body-list">
+										<a href="#">
+											<span>ССылка 7</span>
+										<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+											 xml:space="preserve">
+											<g>
+												<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+													c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+													c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+											</g>
+										</svg>
+									</a>
+								</li>
+
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-9">
+
+
+				<form class="form__search" action="">
+
+					<div class="form__option">
+						<div class="form__option-search">
+							<label class="form__search-label" for="formId"></label>
+							<input type="search" id="formId" name="q" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+						</div>
+
+						 <div class="form__option-category">
+							 <select class="form__category" name"category" id="categoryId">
+								 <option hidden selected disabled>Все категории</option>
+								 <option value="1">Зимние</option>
+								 <option value="2">Летние</option>
+								 <option value="3">Аксессуары</option>
+							 </select>
+						 </div>
+					 </div><!--form__option-->
+
+				 	<button class="form__btn">Поиск</button>
+				</form>
+				
+
+
+
+			<div class="filter">
+				<div class="filter__header">
+					<nav class="filter__header-nav">
+				 		<ul class="filter__header-list">
+				 			<li class="filter__header-link">
+								<p class="car">
+									<a href="#">ССылка 1</a>
+								</p>
+
+							</li>
+				 			<li class="filter__header-link">
+								<p class="big">
+									<a href="#">ссылка 2</a>
+								</p>
+							</li>
+				 			<li class="filter__header-link">
+								<p class="shina">
+									<a href="#">ссылка 3</a>
+								</p>
+							</li>
+							<li class="filter__header-link">
+								<p class="oil">
+									<a href="#">ссылка 4</a>
+								</p>
+							</li>
+				 			<li class="filter__header-link">
+								<p class="battery">
+									<a href="#">ссылка 5</a>
+								</p>
+							</li>
+				 		</ul>
+				 	</nav>
+				</div>
+
+				<div class="filter__body">
+					<div class="col-4">
+						<div class="filter__body-tab">
+							<input id="id1" type="radio" name="test" checked>
+							<label class="tab__1" for="id1">Tab 1</label>
+							<input id="id2" type="radio" name="test" checked>
+							<label class="tab__2" for="id2">Tab 2</label>
+						</div>
+					</div>
+
+<!--select * 6 -->
+					<div class="filter__body-selects">
+						<div>
+							<select class="filter__body-options" id="selectsFirst">
+								<option value="1">Select 1</option>
+								<option value="2">Select 11</option>
+							</select>
+						</div>
+
+						<div>
+							<select class="filter__body-select" id="selectsSecond">
+								<option value="1">Select 2</option>
+								<option value="2">Select 12</option>
+							</select>
+						</div>
+
+						<div>
+							<select class="filter__body-select" id="selectsThird">
+								<option value="1">Select 3</option>
+								<option value="2">Select 13</option>
+							</select>
+						</div>
+
+						<div>
+							<select class="filter__body-select" id="selectsForth">
+								<option value="1">Select 4</option>
+								<option value="2">Select 144</option>
+							</select>
+						</div>
+					</div>
+
+
+
+
+
+					<div class="filter__body-price">
+
+						<div class="selects-price-select">
+							<select class="filter__body-options" id="selectsFirst">
+								<option value="1">Select 1</option>
+								<option value="2">Select 11</option>
+							</select>
+						</div>
+
+						<div class="">
+
+							<div class="filter__price">Цена</div>
+
+
+								<label for="priceFrom">
+									<input class="filter__body-price-input" placeholder="50" min="0" id="priceFrom" name="priceFrom">
+								</label>
+
+
+
+								<label for="priceFrom">
+									<input class="" placeholder="25000" min="0" id="priceFrom" name="priceFrom">
+								</label>
+
+
+						</div>
+
+
+					</div> <!--filter__body-selects price-->
+
+
+					<div class="filter__body-btn">
+						<button class="btn_clear">
+							<i class="fas fa-times"></i>
+							Очистить фильтр
+						</buttom>
+						<button class="btn_filter">Применить фильтр</buttom>
+					</div>
+
+				</div>
+			</div>
+
+		</div> <!--col-9-->
+
+	</div><!--container-->
+</section>
+
+<footer class="">
+</footer>
+
+
+<script src="js/jquery.js"></script>
+<!-- <script src="js/jquery-ui.js"></script> -->
+<!-- <script src="js/jquery.maskedinput.js"></script> -->
+<script src="js/script-header.js"></script>
+<script src="js/script-form.js"></script>
+	<!-- <script>$("#userPhone").mask("+38 (099) 999-99-99");</script>
+<script src="js/jquery.validate.js"></script> -->
+
 
 
 </body>

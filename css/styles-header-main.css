@@ -1,0 +1,74 @@
+/*fonts size*/
+/*fonts line*/
+/*main header*/
+/*colors bg*/
+/*colors txt*/
+/*menu*/
+/*fonts color*/
+/*bg color*/
+/*search*/
+/*fonts color*/
+/*forms*/
+/*fonts color*/
+/*---------mixins---------*/
+/**/
+.head {
+  background-color: #696969;
+  max-height: 50px; }
+
+.head__wrapp {
+  display: flex;
+  justify-content: space-between; }
+
+.head__list {
+  display: flex; }
+
+.head a {
+  padding: 0 14px;
+  line-height: 48px;
+  color: #c2c2c2;
+  margin: 0 10px;
+  display: block;
+  border-bottom: 2px solid transparent;
+  transition: 0.9s; }
+
+.head a:hover {
+  color: #fff;
+  border-bottom: 2px solid #ffc925; }
+
+.head__btn {
+  background-image: url("./img/person.png") no-repeat;
+  background-color: #ff8900;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 36px;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center; }
+
+.head__btn span {
+  padding-left: 11px; }
+
+.head__burger {
+  display: none; }
+
+@media screen and (max-width: 970px) {
+  .head__wrapp ul {
+    display: none; }
+
+  .head__burger {
+    display: block;
+    color: #fff;
+    background-color: #ff8900;
+    font-size: 24px;
+    padding: 12px; }
+
+  .head__list.active {
+    display: block;
+    position: absolute;
+    top: 49px;
+    left: 0;
+    background: #696969 !important; } }
+
+/*# sourceMappingURL=styles-header-main.css.map */

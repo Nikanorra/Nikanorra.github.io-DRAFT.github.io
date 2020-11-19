@@ -1,0 +1,365 @@
+@charset "UTF-8";
+/*fonts size*/
+/*fonts line*/
+/*main header*/
+/*colors bg*/
+/*colors txt*/
+/*menu*/
+/*fonts color*/
+/*bg color*/
+/*search*/
+/*fonts color*/
+/*forms*/
+/*fonts color*/
+/*---------mixins---------*/
+/**/
+.navigation .container {
+  display: flex; }
+
+/*menu*/
+.menu__head-btn {
+  background: #db7200;
+  padding: 17px 16px 16px 15px; }
+
+.menu-bar {
+  fill: #fff;
+  width: 28px;
+  height: 20px;
+  background: #db7200;
+  transform: rotate(180deg); }
+
+.menu__head-title {
+  background: linear-gradient(90deg, #ff8500 0%, #ffae00 100%);
+  width: 100%;
+  line-height: 56px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 23px;
+  color: #fff; }
+
+.menu__head {
+  display: flex;
+  align-items: center; }
+
+.menu-arrow {
+  height: 9px;
+  width: 14px;
+  fill: #c0c4d8;
+  transform: rotate(270deg); }
+
+.menu__body-ul {
+  color: #3b3b3b;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 54px; }
+
+.menu__body-ul li {
+  border-bottom: 1px solid #f1f1f1;
+  padding-left: 40px;
+  padding-right: 35px; }
+
+.menu__body-list a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.form__search {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  align-items: center; }
+
+.form__search * {
+  border: none;
+  background-color: inherit; }
+
+.form__option {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 28px; }
+
+.form__btn {
+  background-color: #ff8900;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 22px 55px; }
+
+/*grey*/
+.filter {
+  margin-top: 20px; }
+
+/*header form*/
+.filter__header-list {
+  background: #606a76;
+  padding: 0 26px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: bold;
+  height: 56px; }
+
+.filter__header-link {
+  display: flex;
+  line-height: 56px;
+  border-bottom: solid 2px transparent;
+  width: 19%;
+  padding: 0 19px; }
+  .filter__header-link .car {
+    position: relative;
+    background: url("../img/filter_full.png") no-repeat;
+    background-position: -1% 115%;
+    width: 100%; }
+    .filter__header-link .car a {
+      right: 0;
+      position: absolute;
+      padding-left: 15px;
+      color: #a9aeb3; }
+  .filter__header-link .big {
+    position: relative;
+    background: url("../img/filter_full.png") no-repeat;
+    background-position: 23% 110%;
+    width: 100%; }
+    .filter__header-link .big a {
+      right: 0;
+      position: absolute;
+      margin-left: 15px;
+      color: #a9aeb3; }
+  .filter__header-link .shina {
+    position: relative;
+    background: url("../img/filter_full.png") no-repeat;
+    background-position: 48% 110%;
+    width: 100%; }
+    .filter__header-link .shina a {
+      right: 0;
+      position: absolute;
+      margin-left: 15px;
+      color: #a9aeb3; }
+  .filter__header-link .oil {
+    position: relative;
+    background: url("../img/filter_full.png") no-repeat;
+    background-position: 75% 110%;
+    width: 100%; }
+    .filter__header-link .oil a {
+      right: 0;
+      position: absolute;
+      margin-left: 15px;
+      color: #a9aeb3; }
+  .filter__header-link .battery {
+    position: relative;
+    background: url("../img/filter_full.png") no-repeat;
+    background-position: 112% 110%;
+    width: 100%; }
+    .filter__header-link .battery a {
+      right: 0;
+      position: absolute;
+      margin-left: 15px;
+      color: #a9aeb3; }
+
+.filter__header-link:hover {
+  border-bottom: solid 2px #ffc925; }
+  .filter__header-link:hover .car:hover {
+    background-position: -1% 0; }
+    .filter__header-link:hover .car:hover a {
+      color: #fff; }
+  .filter__header-link:hover .big:hover {
+    background-position: 23% -5%; }
+    .filter__header-link:hover .big:hover a {
+      color: #fff; }
+  .filter__header-link:hover .shina:hover {
+    background-position: 48% -5%; }
+    .filter__header-link:hover .shina:hover a {
+      color: #fff; }
+  .filter__header-link:hover .oil:hover {
+    background-position: 75% -5%; }
+    .filter__header-link:hover .oil:hover a {
+      color: #fff; }
+  .filter__header-link:hover .battery:hover {
+    background-position: 112% -5%; }
+    .filter__header-link:hover .battery:hover a {
+      color: #fff; }
+
+/*body form*/
+.filter__body {
+  background-color: #696969;
+  padding: 36px 24px; }
+  .filter__body .col-4 {
+    padding-left: 0;
+    padding-right: 0; }
+
+/*Переключатели*/
+.filter__body-tab {
+  background-color: #fff;
+  padding: 3px 4px;
+  display: flex;
+  justify-content: space-around; }
+  .filter__body-tab input {
+    display: none; }
+  .filter__body-tab label {
+    display: inline-block;
+    cursor: pointer;
+    color: #696969;
+    width: 50%;
+    text-align: center;
+    line-height: 38px; }
+  .filter__body-tab input:checked + label.tab__1 {
+    background-color: #ff8900;
+    color: #fff; }
+  .filter__body-tab input:checked + label.tab__2 {
+    background-color: #ff8900;
+    color: #fff; }
+
+/*select * 6*/
+.filter__body-selects {
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between; }
+  .filter__body-selects div {
+    width: 25%;
+    height: 40px;
+    outline-offset: 1px;
+    border-bottom: 1px solid #fff;
+    transition: .4s;
+    margin-right: 20px; }
+  .filter__body-selects div:last-child {
+    margin-right: 0; }
+  .filter__body-selects div:hover {
+    border-bottom: 1px solid #ff8900; }
+  .filter__body-selects select {
+    width: 100%;
+    height: 39px;
+    cursor: pointer; }
+
+/*select price*/
+.filter__body-selects {
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between; }
+  .filter__body-selects div {
+    width: 25%;
+    height: 40px;
+    outline-offset: 1px;
+    border-bottom: 1px solid #fff;
+    transition: .4s;
+    margin-right: 20px; }
+  .filter__body-selects div:last-child {
+    margin-right: 0; }
+  .filter__body-selects div:hover {
+    border-bottom: 1px solid #ff8900; }
+  .filter__body-selects select {
+    width: 100%;
+    height: 39px;
+    cursor: pointer; }
+
+.filter__body-price {
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 25%;
+  margin-left: 26%; }
+  .filter__body-price .selects-price-select {
+    outline-offset: 1px;
+    border-bottom: 1px solid #fff;
+    transition: .4s; }
+  .filter__body-price .selects-price-select:hover {
+    border-bottom: 1px solid #ff8900; }
+  .filter__body-price div {
+    width: 48%;
+    height: 40px; }
+    .filter__body-price div select {
+      width: 100%;
+      height: 39px;
+      cursor: pointer; }
+    .filter__body-price div input {
+      width: 100%;
+      height: 39px;
+      cursor: pointer; }
+  .filter__body-price div {
+    display: flex; }
+    .filter__body-price div label {
+      margin-right: 13px;
+      margin-left: 13px;
+      outline-offset: 1px;
+      border-bottom: 1px solid #fff;
+      transition: .4s; }
+    .filter__body-price div label:last-child {
+      margin: 0; }
+    .filter__body-price div label:hover {
+      border-bottom: 1px solid #ff8900; }
+  .filter__body-price .filter__price {
+    color: #fff;
+    line-height: 40px;
+    text-align: center; }
+
+/*btn*/
+.filter__body-btn {
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between; }
+
+.filter__body-btn button {
+  width: 210px;
+  height: 50px;
+  color: #fff;
+  font-size: 14px; }
+
+.btn_clear {
+  background-color: #ff4800;
+  position: relative; }
+
+.btn_filter {
+  background: linear-gradient(90deg, #ff8500 0%, #ffae00 100%);
+  text-transform: uppercase;
+  font-weight: bold; }
+
+@media screen and (max-width: 1360px) {
+  .filter__header-list {
+    font-size: 15px; } }
+@media screen and (max-width: 1260px) {
+  .filter__header-list {
+    font-size: 13px; } }
+@media screen and (max-width: 1215px) {
+  .filter__header-link .car,
+  .filter__header-link .big,
+  .filter__header-link .shina,
+  .filter__header-link .oil,
+  .filter__header-link .battery {
+    background: none; }
+
+  .filter__header-link .car a,
+  .filter__header-link .big a,
+  .filter__header-link .shina a,
+  .filter__header-link .oil a,
+  .filter__header-link .battery a {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 0; } }
+@media screen and (max-width: 950px) {
+  .menu__body-ul {
+    font-size: 14px;
+    line-height: 50px; }
+
+  .filter__header-link {
+    padding: 0; }
+
+  .filter__body-price {
+    margin-right: 0;
+    margin-left: 0; } }
+@media screen and (max-width: 770px) {
+  .menu__body-ul {
+    font-size: 14px;
+    line-height: 50px; }
+
+  .filter__header-link {
+    padding: 0; }
+
+  .filter__body-price {
+    margin-right: 0;
+    margin-left: 0; }
+
+  .menu__body {
+    display: none; } }
+
+/*# sourceMappingURL=styles-forms.css.map */
