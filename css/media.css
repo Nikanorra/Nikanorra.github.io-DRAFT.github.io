@@ -1,0 +1,697 @@
+/*Меню оранж*/
+.wrapper_org [type="checkbox"] {
+  display: none;
+}
+.wrapper_mob_org {
+color: #c3c3c3;
+padding: 0 37px 0 10px;
+line-height: 50px;
+display: none;
+cursor: pointer;
+}
+/*Меню серое*/
+.wrapper [type="checkbox"] {
+  display: none;
+}
+.wrapper_mob {
+color: #c3c3c3;
+padding: 0 37px 0 10px;
+line-height: 50px;
+display: none;
+cursor: pointer;
+}
+/* Медиа-запросы */
+@media screen and (max-width: 900px) {
+  body {
+    min-width: 790px;
+    max-width: 900px;
+    font-family: 'Roboto', sans-serif;
+  }
+  /*body.lock {
+    overflow: hidden;
+  }
+  /*меню header*/
+  .wrapper {
+    float: left;
+  }
+  .wrapper a {
+   color: grey;
+}
+.wrapper a:hover {
+ color: black;
+}
+.about__items {
+  float: none;
+  text-align: left;
+  padding: 0 37px 0 10px;
+}
+.wrapper ul {
+  display: none;
+}
+.wrapper_mob {
+  display: block;
+}
+input.wrapper_mob:checked + label.wrapper_mob {
+  color: white;
+}
+input.wrapper_mob:checked ~ ul {
+  display: block;
+}
+/*end of header*/
+
+/*menu orange*/
+.wrapper_org {
+  z-index: 100;
+}
+.category {
+  z-index: 1;
+}
+.menu {
+  display: none;
+  background: white;
+}
+.menu.active {
+  display: block;
+  width: 100%;
+}
+
+/*--contacts--*/
+  .contact>div {
+    float: left;
+    font-size: 11px;
+    margin-bottom: 15px;
+  }
+  .recall {
+    width: 50px;
+  }
+  .recall a {
+    font-size: 10px;
+    padding: 0 10px 0 30px;
+  }
+  .navigation>button {
+    font-size: 8px;
+  }
+    .comparison {
+      width: 31%;
+    }
+    .favorite {
+      width: 33%;
+    }
+    .basket {
+      width: 31%;
+    }
+      .col-3-2,
+    .col-9-1 {
+      width: 100%;
+    }
+    .col-8 {
+      width: 34%;
+    }
+    .col-2-4 {
+      width: 33%;
+    }
+    .col-2-4-1 {
+      width: 33%;
+    }
+    .col-6-2 {
+      width: 50%;
+    }
+    .col-6-2-1 {
+      width: 50%;
+    }
+
+  /*меню*/
+  .category {
+    text-indent: none;
+  }
+  .find a {
+    font-size: 8px;
+  }
+  .find {
+    padding-top: 70px;
+  }
+  .grey_form>select {
+    width: 22%;
+  }
+  .form_input,
+  .form_label {
+    font-size: 12px;
+  }
+
+.col-9 {
+    float: none;
+    width: 100%;
+  }
+  .col-3-1 {
+    width: 50%;
+  }
+  .selects1_text2 {
+    width: 10%;
+  }
+  .products {
+    margin-bottom: 0;
+  }
+  .col-1,
+  .col-1-1,
+  .col-1-2 {
+    width: 30%;
+  }
+  .button_discrabe {
+    width: 100%;
+  }
+  .col-6-1,
+  .col-5-1 {
+    width: 100%;
+  }
+  .col-2 {
+    width: 33%;
+  }
+  /*yellow icons tables*/
+  .shina {
+    background-position: 48% 125%;
+  }
+  .shina:hover {
+    background-position: 48% -23%;
+  }
+
+  .oil {
+    background-position: 74% 125%;
+  }
+  .oil:hover {
+    background-position: 74% -23%;
+  }
+
+  .battery {
+    background-position: 110% 125%;
+  }
+  .battery:hover {
+    background-position: 110% -23%;
+  }
+
+  .email {
+	  width: 100%;
+  }
+   .col-2-2 {
+	  width: 100%;
+  }
+  .wezom_last {
+	  padding-top: 20px;
+  }
+	.wezom_logo {
+		width: 6%;
+}
+.wezom_agency_grey {
+		font-size: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+}
+	.wezom_agency_wh {
+		font-size: 13px;
+		padding-left: 15px;
+		padding-right: 15px;
+}
+}
+/* phone */
+@media screen and (max-width: 790px) {
+  body {
+    min-width: 576px;
+    max-width: 790px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .popup_enter_bg {
+    width: 270px;
+    height: 100%;
+  }
+  .popup_enter_sml {
+    width: 250px;
+    height: 520px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .popup_cab {
+    width: 100%;
+    border: none;
+    padding-right: 0;
+    padding-bottom: 80px
+  }
+  .popup_enter h2, .popup_social h2 {
+    font-size: 15px;
+    line-height: 35px;
+  }
+  .registration_social div {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .registration_fb {
+    height: 25px;
+  }
+  .popup_cab p {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 13px;
+  }
+  .valid_text {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    width: 95%;
+  }
+  .popup_social {
+    width: 100%;
+    border: none;
+    padding-right: 0;
+  }
+  .registration_social div {
+      width: 100%;
+      height: 25px;
+      line-height: 25px;
+      margin-bottom: 5px;
+  }
+  .recall_bg  {
+    width: 270px;
+  }
+  .recall_sml {
+    width: 250px;
+    height: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  .col-12,
+  .col-11,
+  .col-10,
+  .col-9,
+  .col-9-1,
+  .col-6,
+  .col-6-1,
+  .col-5-1,
+  .col-4,
+  .col-3,
+  .col-3-2,
+  .col-2,
+  .col-2-1,
+  .col-1,
+  .col-1-2 {
+    width: 100%;
+  }
+  .col-8 {
+    width: 50%;
+  }
+  .col-2-4-1 {
+    width: 17%;
+  }
+.logo {
+  padding: 5px 0 5px 0;
+}
+.recall a {
+  font-size: 9px;
+  padding: 0 5px 0 15px;
+}
+.find {
+  margin-top: 20px;
+}
+.find a {
+  line-height: 50px;
+}
+.car > span {
+  margin-left: 0;
+}
+.menu {
+  margin-right: 0;
+}
+.colorfull {
+    padding: 15px 16px;
+}
+.tab {
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.grey_form>select {
+  width: 19%;
+}
+.grey_form2 {
+    margin: 0 auto;
+}
+.reset button {
+  font-size: 11px;
+  width: 40%;
+}
+
+.car {
+  background: none;
+}
+.car:hover {
+  background-position: 0% 8%;
+}
+
+.big {
+  background: none;
+}
+.big:hover {
+  background-position: 22% 55%;
+}
+.big > span {
+  margin-left: 0;
+}
+.shina {
+  background: none;
+}
+.shina:hover {
+  background-position: 48% -23%;
+}
+.shina > span {
+  margin-left: 0;
+}
+.oil {
+  background: none;
+}
+.oil:hover {
+  background-position: 74% -23%;
+}
+.oil > span {
+  margin-left: 0;
+}
+.battery {
+  background: none;
+}
+.battery:hover {
+  background-position: 110% -23%;
+}
+.battery > span {
+  margin-left: 0;
+}
+.selects1_text {
+      margin-left: 7px;
+}
+.products {
+  border-bottom: none;
+}
+.go {
+    float: none;
+}
+.new_green {
+  margin-left: 0;
+}
+.simile {
+  font-size: 11px;
+  }
+.tobuy_icon {
+  background-position: 20px 13px;
+}
+.tobuy {
+  font-size: 12px;
+  padding: 0;
+}
+.email {
+  float: left;
+}
+.email input {
+  width: 100%;
+}
+.col-1-1 {
+  width: 30%;
+}
+.button_discrabe {
+  width: 100%;
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+  .wezom_last {
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+  }
+	.wezom_logo {
+		width: 15%;
+}
+	.wezom_agency_grey {
+		font-size: 9px;
+}
+	.wezom_agency_wh {
+		font-size: 11px;
+}
+
+/* phone */
+@media screen and (max-width: 576px) {
+  body {
+    min-width: 380px;
+    max-width: 576px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .col-12,
+  .col-11,
+  .col-10,
+  .col-9,
+  .col-9-1,
+  .col-6,
+  .col-6-1,
+  .col-5-1,
+  .col-4,
+  .col-3,
+  .col-3-1,
+  .col-3-2,
+  .col-2-1,
+  .col-1   {
+    width: 100%;
+  }
+  .col-1-2 {
+    width: 50%;
+  }
+.logo {
+  padding: 5px 0 5px 0;
+}
+.recall a {
+  font-size: 9px;
+  padding: 0 5px 0 15px;
+}
+.find {
+  margin-top: 20px;
+}
+.find a {
+  line-height: 50px;
+}
+.car > span {
+  margin-left: 0;
+}
+.menu {
+  margin-right: 0;
+}
+.colorfull {
+    padding: 15px 16px;
+}
+.tab {
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.grey_form>select {
+  width: 19%;
+}
+.grey_form2 {
+    margin: 0 auto;
+}
+.reset button {
+  font-size: 11px;
+  width: 40%;
+}
+
+.car {
+  background: none;
+}
+.car:hover {
+  background-position: 0% 8%;
+}
+
+.big {
+  background: none;
+}
+.big:hover {
+  background-position: 22% 55%;
+}
+.big > span {
+  margin-left: 0;
+}
+.shina {
+  background: none;
+}
+.shina:hover {
+  background-position: 48% -23%;
+}
+.shina > span {
+  margin-left: 0;
+}
+.oil {
+  background: none;
+}
+.oil:hover {
+  background-position: 74% -23%;
+}
+.oil > span {
+  margin-left: 0;
+}
+.battery {
+  background: none;
+}
+.battery:hover {
+  background-position: 110% -23%;
+}
+.battery > span {
+  margin-left: 0;
+}
+.tab, .selects1, .selects2, .selects1_text2, .selects1_text {
+  font-size: 10px;
+}
+.rate {
+  width: 30%;
+}
+.feedback {
+  width: 35%;
+  padding: 0 3%;
+  text-align: center;
+}
+.availabe {
+  width: 35%;
+}
+.tobuy_icon {
+    background-position: 30% 13px;
+  }
+.product_pics {
+    width: 100%;
+  }
+.preview {
+    margin: 0 0 0 20%;
+}
+.products {
+  position: relative;
+}
+.product_labe {
+  padding: 5px 10% 0 10%;
+}
+.product_labe>div {
+  margin: 0 3%;
+}
+
+.price_sale {
+  position: relative;
+}
+.price_line {
+  margin-left: auto;
+  margin-right: auto;
+}
+.go {
+    float: none;
+}
+.email {
+  float: left;
+}
+.email input {
+  width: 100%;
+}
+.col-6-2-1 {
+  width: 70%;
+}
+.col-1-1 {
+  width: 30%;
+}
+.col-1-2 {
+  width: 50%;
+}
+
+.button_discrabe {
+  width: 100%;
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+  .wezom_last {
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+  }
+	.wezom_logo {
+		width: 15%;
+}
+
+	.wezom_agency_grey {
+		font-size: 9px;
+
+}
+	.wezom_agency_wh {
+		font-size: 11px;
+}
+
+@media screen and (max-width: 380px) {
+  body {
+    min-width: 310px;
+    max-width: 380px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .contact>div {
+    float: left;
+    font-size: 9px;
+    margin-bottom: 7px;
+  }
+  .recall a {
+      font-size: 7px;
+      padding: 0 5px 0 15px;
+  }
+  .col-8 {
+    width: 50%;
+  }
+  .col-2-4 {
+    width: 50%;
+  }
+  .col-2-4-1 {
+    width: 100%;
+  }
+  .form_input, .form_label {
+      font-size: 15px;
+  }
+
+.search a {
+  line-height: 56px;
+}
+  .email {
+      padding-left: 0px;
+  }
+  .reset button {
+      font-size: 8px;
+  }
+  .product_labe {
+    padding: 5px 0 0 0;
+  }
+  .product_labe>div {
+    margin: 0 3%;
+  }
+.button_discrabe {
+  font-size: 12px;
+}
+}
+@media screen and (max-width: 310px) {
+  body {
+    min-width: 280px;
+    max-width: 310px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .product_labe>div {
+    margin: 0 1%;
+  }
+  .preview {
+    margin: 0 0 0 10%;
+}
+.tobuy_icon {
+    background-position: 10% 13px;
+}
+.feedback {
+    width: 35%;
+    padding: 0 1%;
+    font-size: 10px;
+}
+.tobuy_compare_text, .tobuy_favorite_text {
+    padding-left: 24px;
+    padding-right: 3px;
+    text-decoration: underline;
+}
+.email input{
+  font-size: 10px;
+  padding-bottom: 21px;
+  }
+}

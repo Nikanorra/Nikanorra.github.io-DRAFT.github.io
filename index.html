@@ -1,450 +1,820 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta charset="UTF-8">
 	<title>wezom-test</title>
-	<!-- <link rel="stylesheet" href="css/main.css"> -->
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/styles-header-main.css">
-	<link rel="stylesheet" href="css/styles-logo.css">
-	<link rel="stylesheet" href="css/styles-forms.css">
-
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/grid.css">
-	<!-- <link rel="stylesheet" href="css/media.css"> -->
-	<!-- <link rel="stylesheet" href="css/jquery-ui.css"> -->
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+	<!--POPUP reg-->
+	<section class="popup_enter" id="popup_enter">
+		<div class="popup_enter_bg">
+		<a href="#" class="close">&times;</a>
+		<div class="clearfix"></div>
 
-<header class="head">
-	<div class="container">
-		<div class="head__wrapp">
+		<div class="popup_enter_sml">
 
-			<div class="head__burger"><i class="fas fa-bars"></i></div>
+		<div class="popup_cab">
 
-		 	<nav class="head__nav">
-		 		<ul class="head__list">
-		 			<li class="head__link"><a href="#">Главная</a></li>
-		 			<li class="head__link"><a href="#">О компании</a></li>
-		 			<li class="head__link"><a href="#">ССылка 1</a></li>
-		 			<li class="head__link"><a href="#">ссылка 2 </a></li>
-		 			<li class="head__link"><a href="#">ссылка 3</a></li>
-		 		</ul>
-		 	</nav>
+			<h2>Вход в личный кабинет</h2>
 
-			<button class="head__btn">
-				<img src="img/person.png" alt="">
-				<span>Вход</span>
-			</button>
-		</div>
+				<form name="valid_email" role="form" method="post" action="" id="userRegistration">
+					<p>Ваш email</p>
+					<p>
+						<label for="registrationEmail"></label>
+						<input type="email" class="valid_text validate[required]" placeholder="mikel_ivanov98@gmail.com" size="37" id="registrationEmail" name="registrationEmail">
+					</p>
+
+					<p>Пароль</p>
+						<p>
+							<label for="registrationPass"></label>
+							<input type="password" class="valid_text" placeholder="*************" size="37" id="registrationPass" name="registrationPass">
+
+					</p>
+
+
+				<input type="radio" name="remember" value="">Запомнить меня
+
+				<div class="registration_link">
+					<a href="#">Забыли пароль?</a>
+					<a href="#">Регистрация</a>
+			  </div>
+	<div class="clearfix"></div>
+				<button type="submit" class="registration_button">Войти в личный кабинет</button>
+			</form>
+			</div>
+
+
+
+		<div class="popup_social">
+
+			<h2>Войти с помощью</h2>
+
+				<div class="registration_social">
+					<div class="registration_fb">
+						<a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+					</div>
+
+					<div class="registration_tw">
+						<a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+					</div>
+
+					<div class="registration_gl">
+						<a href="#"><i class="fab fa-google"></i>Google</a>
+					</div>
+
+				</div>
 	</div>
-</header>
-
-<section class="info">
-	<div class="container">
-
-		<div class="col-3">
-			<div class="info__logo">
-				<img src="img/Test.png" alt="wezom">
-			</div>
+		</div>
 		</div>
 
-		<div class="col-6">
-			<div class="info__contacts">
-
-			<div class="info__contacts-wrapp">
-				<div class="info__contacts-number">+380 98 170 00 740</div>
-				<div class="info__contacts-number">+380 98 170 00 740</div>
-			</div>
-
-			<button class="info__contacts-phone">
-				<img src="img/phone.png" alt="icon-tel">
-				<span>Перезвонить мне</span>
-			</button>
-
-			</div>
-		</div>
-
-		<div class="col-3">
-			<div class="info__special">
-				<button class="info__special-wrapp">
-					<a href="#">
-					<div class="info__special-control">
-
-						<div class="info__special-control-active">
-							<div class="info__special-control-active__img">
-								<img src="img/digitsbg05.png" alt="phone icon">
-							</div>
-							<div class="info__special-control-active__number">5</div>
-						</div>
-
-						<div class="info__special-control-icon">
-							<img src="img/comparison.png" alt="сравнение" height="36px">
-						</div>
-
-						<div class="info__special-control-text">сравнение</div>
-
-					</div>
-					</a>
-				</button>
-
-				<button class="info__special-wrapp">
-					<a href="#">
-					<div class="info__special-control">
-
-						<div class="info__special-control-active">
-							<div class="info__special-control-active__img">
-								<img src="img/digitsbg05.png" alt="message">
-							</div>
-							<div class="info__special-control-active__number">5</div>
-						</div>
-
-						<div class="info__special-control-icon">
-							<img src="img/favorite.png" alt="избранное" height="36px">
-						</div>
-
-						<div class="info__special-control-text">избранное</div>
-
-					</div>
-					</a>
-				</button>
-
-				<button class="info__special-wrapp"><a href="#">
-					<div class="info__special-control">
-
-						<div class="info__special-control-active">
-							<div class="info__special-control-active__img">
-								<img src="img/digitsbg05.png" alt="">
-							</div>
-							<div class="info__special-control-active__number">5</div>
-						</div>
-
-						<div class="info__special-control-icon">
-							<img src="img/basket.png" alt="корзина" height="36px">
-						</div>
-
-						<div class="info__special-control-text">корзина</div>
-
-					</div>
-					</a>
-				</button>
-
-			</div>
-		</div>
-
-	</div>
 </section>
 
-<section class="navigation">
+<!--popup recall-->
+<div class="recall_me" id="recallMy">
+	<div class="recall_bg">
+	<a href="#"class="close1">&times;</a>
+	<div class="clearfix"></div>
+
+	<div class="recall_sml">
+
+
+	<h2 class="">Перезвоните мне</h2>
+
+	<form name="valid_number" method="post" action="">
+		<p>Номер телефона</p>
+			<p><input type="text" class="valid_text" size="37" id="userPhone">
+		</p>
+	</form>
+
+	<div class="clearfix"></div>
+		<button class="recall_button" type="submit">Перезвоните мне</button>
+
+</div></div></div>
+
+
+
+<header class = "head-line">
 	<div class="container">
-		<div class="col-3">
-			<div class="menu">
-				<div class="menu__wrapper">
-					<div class="menu__head">
-						<div class="menu__head-btn">
-							<svg class="menu-bar" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-								 viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;" xml:space="preserve">
-								<g id="Menu_1_">
-									<path d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
-										c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z"/>
-									<path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
-										S379.58,180.455,372.939,180.455z"/>
-									<path d="M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606
-										c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z"/>
-								</g>
-							</svg>
-							<!-- <img src="img/burger.png" alt="menu"> -->
-						</div>
-						<div class="menu__head-title">Меню</div>
+					<div class="col-5">
+					<nav class = "wrapper">
+						<input type="checkbox" name="about_mob" id="about_mobile" class="wrapper_mob">
+						<label for="about_mobile" class="wrapper_mob"><i class="fas fa-bars"></i></label>
+						<ul class="about">
+							<li class="about__items"><a href="#">Главная</a></li>
+							<li class="about__items"><a href="#">О компании</a></li>
+							<li class="about__items"><a href ="#">Ссылка 1</a></li>
+							<li class="about__items"><a href ="#">Ссылка 2</a></li>
+							<li class="about__items"><a href ="#">Ссылка 3</a></li>
+						</ul>
+					</nav>
 					</div>
 
-					<div class="menu__body">
-						<div class="menu__body-wrapper">
-							<nav class="menu__body-nav">
-								<ul class="menu__body-ul">
-									<li class="menu__body-list">
-										<a href="#">
-											<span>ССылка 1</span>
-										<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
-											 xml:space="preserve">
-											<g>
-												<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
-													c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
-													c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
-											</g>
-										</svg>
-									</a>
-								</li>
-
-									<li class="menu__body-list">
-										<a href="#">
-											<span>ССылка 2</span>
-										<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
-											 xml:space="preserve">
-											<g>
-												<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
-													c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
-													c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
-											</g>
-										</svg>
-									</a>
-								</li>
-
-									<li class="menu__body-list">
-										<a href="#">
-											<span>ССылка 3</span>
-										<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
-											 xml:space="preserve">
-											<g>
-												<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
-													c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
-													c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
-											</g>
-										</svg>
-										</a>
-									</li>
-
-									<li class="menu__body-list">
-										<a href="#">
-											<span>ССылка 4</span>
-										<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
-											 xml:space="preserve">
-											<g>
-												<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
-													c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
-													c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
-											</g>
-										</svg>
-									</a>
-								</li>
-
-									<li class="menu__body-list">
-										<a href="#">
-											<span>ССылка 5</span>
-										<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
-											 xml:space="preserve">
-											<g>
-												<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
-													c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
-													c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
-											</g>
-										</svg>
-									</a>
-								</li>
-
-									<li class="menu__body-list">
-										<a href="#">
-											<span>ССылка 6</span>
-										<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
-											 xml:space="preserve">
-											<g>
-												<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
-													c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
-													c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
-											</g>
-										</svg>
-									</a>
-								</li>
-
-									<li class="menu__body-list">
-										<a href="#">
-											<span>ССылка 7</span>
-										<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
-											 xml:space="preserve">
-											<g>
-												<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
-													c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
-													c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
-											</g>
-										</svg>
-									</a>
-								</li>
-
-								</ul>
-							</nav>
+					<div class="enter">
+						<div class="col-7">
+							<a href="#" id="myBtn">
+								<i class="far fa-user"></i>
+								<span>вход</span>
+							</a>
 						</div>
 					</div>
+
+
+<div class="clearfix"></div>
+<!-- header-->
+
+	<!--logo-->
+
+	<div class="head_contact">
+
+			<div class="col-3">
+			<div class="logo">
+				<h1 class="hid">test wezom</h1>
+				<img src="img/Test.png" alt="wezom-test" class="">
+			</div>
+			</div>
+<!--tel-->
+			<div class="col-6">
+				<div class="contact">
+						<div class="tel">+380 98 170 00 740</div>
+						<div class="tel">+380 98 170 00 740</div>
+						<div class="recall"> <a href="#" id="recallBtn">Перезвонить мне</a></div>
 				</div>
 			</div>
+
+
+<!--navigation-->
+			<div class="col-3">
+			<form class="navigation">
+				<button class="basket">
+					<div class="message">
+						<p class="message__link">5</p>
+					</div>
+					<a class="navigation__link">корзина</a>
+				</button>
+
+				<button class="favorite">
+					<div class="message">
+						<p class="message__link">5</p>
+					</div>
+					<a class="navigation__link">избранное</a>
+				</button>
+
+				<button class="comparison">
+					<div class="message">
+						<p class="message__link">5</p>
+					</div>
+					<a class="navigation__link">сравнение</a>
+				</button>
+			</form>
+			</div>
+
+
+
+</div>
+</div>
+</header>
+
+<!--site-->
+<div class="container">
+
+	<div class="clearfix"></div>
+		<div class="col-3-2">
+			<!--menu-->
+			<nav class = "wrapper_org">
+				<div class="menu__list__white">Меню
+					<a href="#" class="menu__list__white_01"></a>
+				</div>
+					<ul class="menu">
+
+
+					   <li class="menu__list"><a href ="#">ССылка 1</a>
+							<ul class="menu_drop">
+							    <li><a href ="#">ССылка 1</a></li>
+							    <li><a href ="#">ССылка 2</a></li>
+									<li><a href ="#">ССылка 3</a></li>
+							    <li><a href ="#">ССылка 4</a></li>
+									<li><a href ="#">ССылка 5</a></li>
+							    <li><a href ="#">ССылка 6</a></li>
+									<li><a href ="#">ССылка 7</a></li>
+						   </ul>
+						</li>
+				    <li class="menu__list"><a href ="#">ССылка 2</a>
+							<ul class="menu_drop">
+								<li><a href ="#">ССылка 1</a></li>
+								 <li><a href ="#">ССылка 2</a></li>
+								 <li><a href ="#">ССылка 3</a></li>
+								 <li><a href ="#">ССылка 4</a></li>
+								 <li><a href ="#">ССылка 5</a></li>
+								 <li><a href ="#">ССылка 6</a></li>
+								 <li><a href ="#">ССылка 7</a></li>
+							 </ul>
+						</li>
+						<li class="menu__list"><a href ="#">ССылка 3</a>
+							<ul class="menu_drop">
+							   <li><a href ="#">ССылка 1</a></li>
+								 <li><a href ="#">ССылка 2</a></li>
+								 <li><a href ="#">ССылка 3</a></li>
+								 <li><a href ="#">ССылка 4</a></li>
+								 <li><a href ="#">ССылка 5</a></li>
+								 <li><a href ="#">ССылка 6</a></li>
+								 <li><a href ="#">ССылка 7</a></li>
+							 </ul>
+						</li>
+				    <li class="menu__list"><a href ="#">ССылка 4</a>
+							<ul class="menu_drop">
+								 <li><a href ="#">ССылка 1</a></li>
+								 <li><a href ="#">ССылка 2</a></li>
+								 <li><a href ="#">ССылка 3</a></li>
+								 <li><a href ="#">ССылка 4</a></li>
+								 <li><a href ="#">ССылка 5</a></li>
+								 <li><a href ="#">ССылка 6</a></li>
+								 <li><a href ="#">ССылка 7</a></li>
+						   </ul>
+						 </li>
+						<li class="menu__list"><a href ="#">ССылка 5</a>
+							<ul class="menu_drop">
+								<li><a href ="#">ССылка 1</a></li>
+								<li><a href ="#">ССылка 2</a></li>
+								<li><a href ="#">ССылка 3</a></li>
+								<li><a href ="#">ССылка 4</a></li>
+								<li><a href ="#">ССылка 5</a></li>
+								<li><a href ="#">ССылка 6</a></li>
+								<li><a href ="#">ССылка 7</a></li>
+						   </ul>
+						 </li>
+				    <li class="menu__list"><a href ="#">ССылка 6</a>
+							<ul class="menu_drop">
+								<li><a href ="#">ССылка 1</a></li>
+								<li><a href ="#">ССылка 2</a></li>
+								<li><a href ="#">ССылка 3</a></li>
+								<li><a href ="#">ССылка 4</a></li>
+								<li><a href ="#">ССылка 5</a></li>
+								<li><a href ="#">ССылка 6</a></li>
+								<li><a href ="#">ССылка 7</a></li>
+						   </ul>
+						 </li>
+						<li class="menu__list"><a href ="#">ССылка 7</a>
+							<ul class="menu_drop">
+								 <li><a href ="#">ССылка 1</a></li>
+								 <li><a href ="#">ССылка 2</a></li>
+								 <li><a href ="#">ССылка 3</a></li>
+								 <li><a href ="#">ССылка 4</a></li>
+								 <li><a href ="#">ССылка 5</a></li>
+								 <li><a href ="#">ССылка 6</a></li>
+								 <li><a href ="#">ССылка 7</a></li>
+						   </ul>
+						 </li>
+				 </ul>
+		 </nav>
+		</div>
+
+<!--FILTER-->
+<div class="filter__site">
+		<div class="col-9-1">
+			<form class="form" id="searchFilter">
+			<div class="col-8">
+
+				<div class="form_group">
+						<input type="text" placeholder="Поиск по сайту" class="form_input" id="inputFilter">
+						<label for="inputFilter" class="form_label"></label>
+				</div>
+
+			</div>
+
+
+			<div class="col-2-4">
+				<div class="category">
+					<select class="category_option" id="category_selec">
+					  <option value="1">Все категории</option>
+					  <option value="2">Пункт 1</option>
+					</select>
+				</div>
+			</div>
+
+				<div class="col-2-4-1">
+					<button class="search">Поиск</button>
+				</div>
+				</form>
+			</div>
+</div>
+
+		<!--GREY site top-->
+		<section class="base">
+		<div class="col-9">
+						<div class="find">
+						<ul class="">
+							<li class="">
+								<a href="#" class="">
+									<span class="car">
+										<span class="">ССылка 1</span>
+									</span>
+								</a>
+							</li>
+
+							<li class="">
+								<a href="#" class="find_link">
+									<span class="big">
+										<span class="">ССылка 2</span>
+									</span>
+								</a>
+							</li>
+
+						<li class="">
+								<a href="#" class="find_link">
+									<span class="shina">
+										<span class="">ССылка 3</span>
+									</span>
+								</a>
+							</li>
+
+							<li class="">
+								<a href="#" class="find_link">
+									<span class="oil">
+										<span class="">ССылка 4</span>
+									</span>
+								</a>
+							</li>
+
+
+							<li class="">
+								<a href="#" class="find_link">
+									<span class="battery">
+										<span class="">ССылка 5</span>
+									</span>
+								</a>
+							</li>
+					</ul>
+				 </div>
+	<!--GREY site-->
+		<div class="colorfull">
+
+
+<!--buttom-->
+			<div class="col-3">
+			<form class="grey_form" id="priceFilter">
+				<div class="tab">
+					<a href="#" class="tab_button01">Tab 1</a>
+					<a href="#" class="tab_button02">Tab 2</a>
+				</div>
+		</div>
+<div class="clearfix"></div>
+
+
+<!--SELECTS-->
+			<div class="selects_option">
+				<select class="selects1" id="selectsFirst">
+					<option value="1">Select 1</option>
+					<option value="2">Select 2</option>
+				</select>
+
+
+				<select class="selects1" id="selectsSecond">
+					<option value="1">Select 2</option>
+					<option value="2">Select 1</option>
+				</select>
+
+				<select class="selects1" id="selectsThird">
+					<option value="1">Select 3</option>
+					<option value="2">Select 1</option>
+				</select>
+
+				<select class="selects1" id="selectsForth">
+					<option value="1">Select 4</option>
+					<option value="2">Select 1</option>
+				</select>
+			</div>
+
+<div class="selects_option">
+		<!--	<form class="grey_form grey_form2" id="priceFilter">-->
+
+				<select class="selects2" id="selectsSix">
+					<option value="1">Select 6</option>
+					<option value="2">Select 2</option>
+				</select>
+
+				<div class="selects2">
+				<span class="selects1_text2">Цена</span>
+				<label for="priceFrom"></label>
+				<input class="selects1_text" placeholder="50" min="0" id="priceFrom" name="priceFrom" type="number">
+				<label for="priceFor"></label>
+				<input class="selects1_text" placeholder="250000" min="0" id="priceFor" name="priceFor" type="number">
+				</div>
+			</div>
+
+
+<!--buttom reset-->
+				<div class="reset">
+					<button class="btn_clear"><i class="fas fa-times" id="resetBtn"></i> Очистить фильтр</buttom>
+					<button class="btn_filter">Применить фильтр</buttom>
+				</div>
+		</form>
+
+		</div> <!--coclorfuul-->
+</div>
+</section>
+</div>
+
+<div class="clearfix"></div>
+<!---Заглавная--->
+
+<section class="goods">
+	<div class="container">
+		<div class="col-3-1">
+			<h2 class="cards">Карточки товаров</h2>
 		</div>
 
 		<div class="col-9">
+			<a href="#">
+			<div class="go">
+				<span class="catalog">Ссылка в каталог</span>
+				<span class="arrow">&#8594;</span>
+			</div>
+		</a>
+		</div>
+		</div>
+</section>
+<div class="clearfix"></div>
 
+<!---Карточки товаров--->
+<section class="product">
+	<div class="container">
+<!--1-->
+<div class="col-3-1 products">
+	<div class="brend">Mark</div>
+	<div class="description"><p>Антифриз Fosser Antifreeze</p>FA 12 Readymix 1 л Concentrat, Germany</div>
+	<div class="rate"></div>
+	<div class="feedback">Отзывы (10)</div>
+	<div class="availabe">В наличии: 24 шт.</div>
 
-				<form class="form__search" action="">
+	<div class="product_pics">
+		<div class="product_icons">
+			<div class="summer"><span class="summer_text">Летняя</span></div>
+			<div class="usual"><span class="usual_text">легковая</span></div>
+			<div class="new"><span class="new_text">новая</span></div>
+		</div>
+		<div class="preview"></div>
+	</div>
+<div class="clearfix"></div>
 
-					<div class="form__option">
-						<div class="form__option-search">
-							<label class="form__search-label" for="formId"></label>
-							<input type="search" id="formId" name="q" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
-						</div>
+	<div class="product_labe">
+		<div class="new_green"><span>Новинка</span></div>
+		<div class="hit"><span>Хит</span></div>
+		<div class="sale"><span>скидка</span></div>
+	</div>
+<div class="clearfix"></div>
 
-						 <div class="form__option-category">
-							 <select class="form__category" name"category" id="categoryId">
-								 <option hidden selected disabled>Все категории</option>
-								 <option value="1">Зимние</option>
-								 <option value="2">Летние</option>
-								 <option value="3">Аксессуары</option>
-							 </select>
-						 </div>
-					 </div><!--form__option-->
+	<div class="price">
+		<div class="col-6-2">
+			<div class="price_full">
+				<div class="price_full_big">600</div>
+				<div class="price_full_sml">грн.</div>
+			</div>
+		</div>
 
-				 	<button class="form__btn">Поиск</button>
-				</form>
-				
+	<div class="col-6-2">
+		<div class="price_sale">
+			<div class="price_sale_text">11 250 грн.</div>
+			<div class="price_line"></div>
 
+		</div>
+	</div>
 
+		<button class="tobuy">
+			<div class="tobuy_icon"><span>купить товар</span></div>
+		</button>
 
-			<div class="filter">
-				<div class="filter__header">
-					<nav class="filter__header-nav">
-				 		<ul class="filter__header-list">
-				 			<li class="filter__header-link">
-								<p class="car">
-									<a href="#">ССылка 1</a>
-								</p>
+	<div class="simile">
 
-							</li>
-				 			<li class="filter__header-link">
-								<p class="big">
-									<a href="#">ссылка 2</a>
-								</p>
-							</li>
-				 			<li class="filter__header-link">
-								<p class="shina">
-									<a href="#">ссылка 3</a>
-								</p>
-							</li>
-							<li class="filter__header-link">
-								<p class="oil">
-									<a href="#">ссылка 4</a>
-								</p>
-							</li>
-				 			<li class="filter__header-link">
-								<p class="battery">
-									<a href="#">ссылка 5</a>
-								</p>
-							</li>
-				 		</ul>
-				 	</nav>
-				</div>
+			<div class="col-6-2">
+				<div class="simile01">
+				<div class="tobuy_compare"></div>
+				<div class="tobuy_compare_text">Сравнить товар</div>
+			</div>
+			</div>
 
-				<div class="filter__body">
-					<div class="col-4">
-						<div class="filter__body-tab">
-							<input id="id1" type="radio" name="test" checked>
-							<label class="tab__1" for="id1">Tab 1</label>
-							<input id="id2" type="radio" name="test" checked>
-							<label class="tab__2" for="id2">Tab 2</label>
-						</div>
-					</div>
+			<div class="col-6-2">
+			<div class="simile02">
+			<div class="tobuy_favorite"></div>
+				<div class="tobuy_favorite_text">В избранное</div>
+			</div>
+			</div>
 
-<!--select * 6 -->
-					<div class="filter__body-selects">
-						<div>
-							<select class="filter__body-options" id="selectsFirst">
-								<option value="1">Select 1</option>
-								<option value="2">Select 11</option>
-							</select>
-						</div>
+	</div>
 
-						<div>
-							<select class="filter__body-select" id="selectsSecond">
-								<option value="1">Select 2</option>
-								<option value="2">Select 12</option>
-							</select>
-						</div>
+</div>
+</div>
+	<!--2-->
+	<div class="col-3-1 products">
+		<div class="brend">Mark</div>
+		<div class="description"><p>Антифриз Fosser Antifreeze</p>FA 12 Readymix 1 л Concentrat, Germany</div>
+		<div class="rate"></div>
+		<div class="feedback">Отзывы (10)</div>
+		<div class="availabe">В наличии: 24 шт.</div>
 
-						<div>
-							<select class="filter__body-select" id="selectsThird">
-								<option value="1">Select 3</option>
-								<option value="2">Select 13</option>
-							</select>
-						</div>
+		<div class="product_pics">
+			<div class="product_icons">
+				<div class="summer"><span class="summer_text">Летняя</span></div>
+				<div class="usual"><span class="usual_text">легковая</span></div>
+				<div class="new"><span class="new_text">новая</span></div>
+			</div>
+			<div class="preview"></div>
+		</div>
+	<div class="clearfix"></div>
 
-						<div>
-							<select class="filter__body-select" id="selectsForth">
-								<option value="1">Select 4</option>
-								<option value="2">Select 144</option>
-							</select>
-						</div>
-					</div>
+		<div class="product_labe">
+			<div class="new_green"><span>Новинка</span></div>
+			<div class="hit"><span>Хит</span></div>
+			<div class="sale"><span>скидка</span></div>
+		</div>
+	<div class="clearfix"></div>
 
-
-
-
-
-					<div class="filter__body-price">
-
-						<div class="selects-price-select">
-							<select class="filter__body-options" id="selectsFirst">
-								<option value="1">Select 1</option>
-								<option value="2">Select 11</option>
-							</select>
-						</div>
-
-						<div class="">
-
-							<div class="filter__price">Цена</div>
-
-
-								<label for="priceFrom">
-									<input class="filter__body-price-input" placeholder="50" min="0" id="priceFrom" name="priceFrom">
-								</label>
-
-
-
-								<label for="priceFrom">
-									<input class="" placeholder="25000" min="0" id="priceFrom" name="priceFrom">
-								</label>
-
-
-						</div>
-
-
-					</div> <!--filter__body-selects price-->
-
-
-					<div class="filter__body-btn">
-						<button class="btn_clear">
-							<i class="fas fa-times"></i>
-							Очистить фильтр
-						</buttom>
-						<button class="btn_filter">Применить фильтр</buttom>
-					</div>
-
+		<div class="price">
+			<div class="col-6-2">
+				<div class="price_full">
+					<div class="price_full_big">600</div>
+					<div class="price_full_sml">грн.</div>
 				</div>
 			</div>
 
-		</div> <!--col-9-->
+		<div class="col-6-2">
+			<div class="price_sale">
+				<div class="price_sale_text">11 250 грн.</div>
+				<div class="price_line"></div>
 
-	</div><!--container-->
+			</div>
+		</div>
+
+			<button class="tobuy">
+				<div class="tobuy_icon"><span>купить товар</span></div>
+			</button>
+
+		<div class="simile">
+
+				<div class="col-6-2">
+					<div class="simile01">
+					<div class="tobuy_compare"></div>
+					<div class="tobuy_compare_text">Сравнить товар</div>
+				</div>
+				</div>
+
+				<div class="col-6-2">
+				<div class="simile02">
+				<div class="tobuy_favorite"></div>
+					<div class="tobuy_favorite_text">В избранное</div>
+				</div>
+				</div>
+
+		</div>
+
+	</div>
+	</div>
+<!--3-->
+<div class="col-3-1 products">
+	<div class="brend">Mark</div>
+	<div class="description"><p>Антифриз Fosser Antifreeze</p>FA 12 Readymix 1 л Concentrat, Germany</div>
+	<div class="rate"></div>
+	<div class="feedback">Отзывы (10)</div>
+	<div class="availabe">В наличии: 24 шт.</div>
+
+	<div class="product_pics">
+		<div class="product_icons">
+			<div class="summer"><span class="summer_text">Летняя</span></div>
+			<div class="usual"><span class="usual_text">легковая</span></div>
+			<div class="new"><span class="new_text">новая</span></div>
+		</div>
+		<div class="preview"></div>
+	</div>
+<div class="clearfix"></div>
+
+	<div class="product_labe">
+		<div class="new_green"><span>Новинка</span></div>
+		<div class="hit"><span>Хит</span></div>
+		<div class="sale"><span>скидка</span></div>
+	</div>
+<div class="clearfix"></div>
+
+	<div class="price">
+		<div class="col-6-2">
+			<div class="price_full">
+				<div class="price_full_big">600</div>
+				<div class="price_full_sml">грн.</div>
+			</div>
+		</div>
+
+	<div class="col-6-2">
+		<div class="price_sale">
+			<div class="price_sale_text">11 250 грн.</div>
+			<div class="price_line"></div>
+
+		</div>
+	</div>
+
+		<button class="tobuy">
+			<div class="tobuy_icon"><span>купить товар</span></div>
+		</button>
+
+	<div class="simile">
+
+			<div class="col-6-2">
+				<div class="simile01">
+				<div class="tobuy_compare"></div>
+				<div class="tobuy_compare_text">Сравнить товар</div>
+			</div>
+			</div>
+
+			<div class="col-6-2">
+			<div class="simile02">
+			<div class="tobuy_favorite"></div>
+				<div class="tobuy_favorite_text">В избранное</div>
+			</div>
+			</div>
+
+	</div>
+
+</div>
+</div>
+<!--4-->
+<div class="col-3-1 products">
+	<div class="brend">Mark</div>
+	<div class="description"><p>Антифриз Fosser Antifreeze</p>FA 12 Readymix 1 л Concentrat, Germany</div>
+	<div class="rate"></div>
+	<div class="feedback">Отзывы (10)</div>
+	<div class="availabe">В наличии: 24 шт.</div>
+
+	<div class="product_pics">
+		<div class="product_icons">
+			<div class="summer"><span class="summer_text">Летняя</span></div>
+			<div class="usual"><span class="usual_text">легковая</span></div>
+			<div class="new"><span class="new_text">новая</span></div>
+		</div>
+		<div class="preview"></div>
+	</div>
+<div class="clearfix"></div>
+
+	<div class="product_labe">
+		<div class="new_green"><span>Новинка</span></div>
+		<div class="hit"><span>Хит</span></div>
+		<div class="sale"><span>скидка</span></div>
+	</div>
+<div class="clearfix"></div>
+
+	<div class="price">
+		<div class="col-6-2">
+			<div class="price_full">
+				<div class="price_full_big">600</div>
+				<div class="price_full_sml">грн.</div>
+			</div>
+		</div>
+
+	<div class="col-6-2">
+		<div class="price_sale">
+			<div class="price_sale_text">11 250 грн.</div>
+			<div class="price_line"></div>
+
+		</div>
+	</div>
+
+		<button class="tobuy">
+			<div class="tobuy_icon"><span>купить товар</span></div>
+		</button>
+
+	<div class="simile">
+
+			<div class="col-6-2">
+				<div class="simile01">
+				<div class="tobuy_compare"></div>
+				<div class="tobuy_compare_text">Сравнить товар</div>
+			</div>
+			</div>
+
+			<div class="col-6-2">
+			<div class="simile02">
+			<div class="tobuy_favorite"></div>
+				<div class="tobuy_favorite_text">В избранное</div>
+			</div>
+			</div>
+
+	</div>
+
+</div>
+</div>
+
+</div>
 </section>
+<div class="clearfix"></div>
 
-<footer class="">
+<!---FOOTER---------->
+<footer>
+	<!--BLOCKS-->
+<div class="container">
+
+		<div class="col-6-1">
+			<div class="blocks01 blocks_line01">Блок 1</div>
+			<div class="clearfix"></div>
+			<div class="course">Будьте в курсе новостей и новинок!</div>
+			<div class="subscription">Подписывайтесь на рассылку</div>
+			<div class="email">
+				<form role="form" method="post" action="" id="userSubscribe">
+					<div class="col-6-2-1">
+						<label for="inputEmail"></label>
+						<input type="email" name="inputEmail" id="inputEmail" placeholder="Укажите свой email для подписки">
+					</div>
+					<div class="col-1-1">
+						<button type="submit" class="button_discrabe">подписаться</button>
+					</div>
+				</form>
+			</div>
+
+		</div>
+
+		<div class="col-2">
+			<div class="blocks02_bg blocks_line01">Блок ссылок 1</div>
+			<div class="clearfix"></div>
+			<div class="blocks02_sml">Ссылка 1</div>
+			<div class="blocks02_sml">Ссылка 2</div>
+			<div class="blocks02_sml">Ссылка 3</div>
+			<div class="blocks02_sml">Ссылка 4</div>
+		</div>
+
+		<div class="col-2">
+			<div class="blocks02_bg blocks_line01">Блок 2</div>
+			<div class="clearfix"></div>
+			<div class="blocks02_sml">Ссылка 1</div>
+			<div class="blocks02_sml">Ссылка 2</div>
+			<div class="blocks02_sml">Ссылка 3</div>
+			<div class="blocks02_sml">Ссылка 4</div>
+		</div>
+
+		<div class="col-2">
+			<div class="blocks02_bg blocks_line01">Блок ссылок 3</div>
+			<div class="clearfix"></div>
+			<div class="blocks02_sml">Ссылка 1</div>
+			<div class="blocks02_sml">Ссылка 2</div>
+			<div class="blocks02_sml">Ссылка 3</div>
+			<div class="blocks02_sml">Ссылка 4</div>
+		</div>
+
+<!--line-->
+	<div class="clearfix"></div>
+	<div class="blocks_line"></div>
+	<div class="clearfix"></div>
+<!--footer02-->
+	<div class="col-2">
+		<div class="footer_logo"></div>
+	</div>
+
+	<div class="col-4">
+		<div class="rigts">© Copyrith 2017. Тестовое задание Wezom</div>
+	</div>
+
+<!--SOCIAL-->
+	<div class="col-4">
+		<div class="social">
+			<div class="vk"><i class="fab fa-vk"></i></div>
+			<div class="fb"><i class="fab fa-facebook-f"></i></div>
+			<div class="tw"><i class="fab fa-twitter"></i></div>
+			<div class="yb"><i class="fab fa-youtube"></i></div>
+		</div>
+	</div>
+
+	<div class="col-2-2">
+		<div class="wezom_last">
+			<div class="wezom_logo"></div>
+			<div class="wezom_agency">
+				<div class="wezom_agency_grey">Разработка тестового</div>
+				<div class="wezom_agency_wh">Wezom Agency</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+</div> <!--container-->
 </footer>
 
 
 <script src="js/jquery.js"></script>
-<!-- <script src="js/jquery-ui.js"></script> -->
-<!-- <script src="js/jquery.maskedinput.js"></script> -->
-<script src="js/script-header.js"></script>
-<script src="js/script-form.js"></script>
-	<!-- <script>$("#userPhone").mask("+38 (099) 999-99-99");</script>
-<script src="js/jquery.validate.js"></script> -->
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/script.js"></script>
+	<script>$("#userPhone").mask("+38 (099) 999-99-99");</script>
+<script src="js/jquery.validate.js"></script>
 
-
+<!--	<script>
+		$("#resetBtn").click(functional()
+	{
+		$("#priceFilter")[0].reset();
+	</script> -->
 
 </body>
 </html>
