@@ -359,7 +359,11 @@
     margin-right: 0;
     margin-left: 0; }
 
-  .menu__body {
-    display: none; } }
+  .menu__body-ul {
+    font-size: 8px;
+    line-height: 15px; }
+    .menu__body-ul li {
+      padding-left: 0;
+      padding-right: 0; } }
 
 /*# sourceMappingURL=styles-forms.css.map */
