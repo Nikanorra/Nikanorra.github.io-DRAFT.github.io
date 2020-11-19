@@ -53,22 +53,4 @@
 .head__burger {
   display: none; }
 
-@media screen and (max-width: 970px) {
-  .head__wrapp ul {
-    display: none; }
-
-  .head__burger {
-    display: block;
-    color: #fff;
-    background-color: #ff8900;
-    font-size: 24px;
-    padding: 12px; }
-
-  .head__list.active {
-    display: block;
-    position: absolute;
-    top: 49px;
-    left: 0;
-    background: #696969 !important; } }
-
 /*# sourceMappingURL=styles-header-main.css.map */

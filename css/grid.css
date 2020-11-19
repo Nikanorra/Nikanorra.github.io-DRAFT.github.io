@@ -1,124 +1,65 @@
-.row::after {
-	content: '';
-	height: 0;
-	display: block;
-	clear: both;
+*{
+  box-sizing: border-box;
 }
-/*
-.row-expand {
-	margin: 0 -10px;
+
+.row {
+    display: flex;
 }
-*/
-.row-expand > * {
-	box-sizing: border-box;
-	padding: 0 10px;
-	margin-bottom: 20px;
+
+.row {
+    display: flex;
 }
 
 .col-12 {
-	float: left;
-	width: 100%;
-}
+  width: 100%;
 
+}
 .col-11 {
-	float: left;
-	width: calc(100%/1.09090900364);
-}
+width: calc(100% / 12 * 11);
 
+}
 .col-10 {
-	float: left;
-	width: calc(100%/1.20000000005);
-}
+  width: calc(100% / 12 * 10);
 
+}
 .col-9 {
-	float: left;
-	width: calc(100%/1.33333333333);
-}
-.col-9-1 {
-	float: left;
-	width: calc(100%/1.33333333333);
-}
+  width: calc(100% / 12 * 9);
 
+}
 .col-8 {
-	float: left;
-	width: calc(100%/1.500000015);
-}
+  width: calc(100% / 12 * 8);
 
+}
 .col-7 {
-	float: left;
-	width: calc(100%/1.71428571527);
-}
+  width: calc(100% /12 * 7);
 
+}
 .col-6 {
-	float: left;
-	width: calc(100%/2);
-}
-.col-6-1 {
-	float: left;
-	width: calc(100%/2);
-}
-	.col-6-2 {
-	float: left;
-	width: calc(100%/2);
-}
-.col-6-2-1 {
-float: left;
-width: calc(100%/2);
+  width: calc(100% /12 * 6);
+
 }
 .col-5 {
-	float: left;
-	width: calc(100%/2.4000000384);
-}
-.col-5-1 {
-	float: left;
-	width: calc(100%/2.4000000384);
+width: calc(100% / 12 * 5);
+
 }
 .col-4 {
-	float: left;
-	width: calc(100%/3);
-}
+  width: calc(100% / 12 * 4);
 
+}
 .col-3 {
-	float: left;
-	width: calc(100%/4);
-}
-.col-3-1 {
-	float: left;
-	width: calc(100%/4);
-}
-.col-3-2 {
-	float: left;
-	width: calc(100%/4);
+  width: calc(100% / 12 * 3);
+
 }
 .col-2 {
-	float: left;
-	width: calc(100%/6.000000024);
-}
-.col-2-1 {
-	float: left;
-	width: calc(100%/6.000000024);
-}
-.col-2-2 {
-	float: left;
-	width: calc(100%/6.000000024);
-}
-.col-2-4 {
-	float: left;
-	width: calc(100%/6.000000024);
-}
-.col-2-4-1 {
-	float: left;
-	width: calc(100%/6.000000024);
+  width: calc(100% / 12 * 2);
+
 }
 .col-1 {
-	float: left;
-	width: calc(100%/12);
+  	width: calc(100% / 12 * 1);
+
 }
-.col-1-1 {
-	float: left;
-	width: calc(100%/12);
-}
-.col-1-2 {
-	float: left;
-	width: calc(100%/12);
+[class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+  /* border: 1px solid green; */
 }
