@@ -1,0 +1,65 @@
+/*fonts size*/
+/*fonts line*/
+/*main header*/
+/*colors bg*/
+/*colors txt*/
+/*menu*/
+/*fonts color*/
+/*bg color*/
+/*search*/
+/*fonts color*/
+/*forms*/
+/*fonts color*/
+/*---------mixins---------*/
+/**/
+.products {
+  margin-top: 40px; }
+
+.products__title {
+  display: flex;
+  justify-content: space-between; }
+
+.products__title-text {
+  font-size: 36px; }
+
+.products__catalog {
+  font-size: 14px; }
+  .products__catalog .products__catalog-text {
+    text-decoration: underline; }
+  .products__catalog .products__catalog-arrow {
+    color: #ff8900; }
+
+.products__cards {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .products__cards .col-3 {
+    padding-left: 0;
+    padding-right: 0; }
+
+.products__cards-items {
+  border: 1px solid #dbdbdb;
+  width: 100%;
+  padding: 20px 8px;
+  transition: .3s; }
+
+.products__cards-items:hover {
+  border-top: 1px solid #ff8900; }
+
+.cards__rate {
+  display: flex;
+  justify-content: space-between; }
+
+.cards__status {
+  display: flex;
+  justify-content: center; }
+
+.cards__price {
+  display: flex;
+  justify-content: space-between; }
+
+.cards__action {
+  display: flex;
+  justify-content: space-between; }
+
+/*# sourceMappingURL=styles-cards.css.map */
