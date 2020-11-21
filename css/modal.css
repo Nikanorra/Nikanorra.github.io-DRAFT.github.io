@@ -18,6 +18,9 @@
   font-weight: bold;
   background: none !important; }
 
+.popup {
+  display: none; }
+
 .popup__enter {
   position: fixed;
   display: flex;
