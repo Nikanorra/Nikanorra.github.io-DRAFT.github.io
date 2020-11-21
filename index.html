@@ -4,24 +4,124 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta charset="UTF-8">
 	<title>wezom-test</title>
-	<!-- <link rel="stylesheet" href="css/main.css"> -->
+
+	<link rel="stylesheet" href="css/jquery-ui.css">
+
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/styles-header-main.css">
 	<link rel="stylesheet" href="css/styles-logo.css">
 	<link rel="stylesheet" href="css/styles-forms.css">
 	<link rel="stylesheet" href="css/styles-cards.css">
 	<link rel="stylesheet" href="css/styles-footer.css">
+	<link rel="stylesheet" href="css/modal.css">
 	<link rel="stylesheet" href="css/media.css">
 
 	<link rel="stylesheet" href="css/grid.css">
-	<!-- <link rel="stylesheet" href="css/media.css"> -->
-	<!-- <link rel="stylesheet" href="css/jquery-ui.css"> -->
+
+
 	<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+
+	<section class="popup" id="popupEnter">
+
+
+				<div class="popup__enter">
+
+					<div class="popup__enter-wrap">
+						<span class="close">&#10006;</span>
+
+						<div class="popup__enter-bg">
+							<div class="enter__cabinet">
+								<h2>Вход в личный кабинет</h2>
+								<form name="valid_email" role="form" method="post" action="" id="userRegistration">
+									<p>Ваш email</p>
+									<p>
+										<label for="registrationEmail"></label>
+										<input type="email" class="valid_text validate[required]" placeholder="mikel_ivanov98@gmail.com" size="37" id="registrationEmail" name="registrationEmail">
+									</p>
+
+									<p>Пароль</p>
+									<p>
+										<label for="registrationPass"></label>
+										<input type="password" class="valid_text" placeholder="*************" size="37" id="registrationPass" name="registrationPass">
+									</p>
+
+									<label class="label">
+										<input type="radio" class="radio" name="radio_active">
+										<span class="text">Запомнить меня</span>
+									</label>
+
+									<div class="registration_link">
+										<a href="#">Забыли пароль?</a>
+										<a href="#">Регистрация</a>
+								  </div>
+									<button type="submit" class="registration_button">Войти в личный кабинет</button>
+								</form>
+							</div>
+
+						<div class="enter__social">
+							<h2>Войти с помощью</h2>
+							<div class="enter__social-wrapp">
+								<div class="registration_fb">
+									<a href="#">
+										<i class="fab fa-facebook-f"></i>
+										<span>Facebook</span>
+									</a>
+								</div>
+
+								<div class="registration_tw">
+									<a href="#">
+										<i class="fab fa-twitter"></i>
+										<span>Twitter</span>
+									</a>
+								</div>
+
+								<div class="registration_gl">
+									<a href="#">
+										<i class="fab fa-google"></i>
+										<span>Google</span>
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+	</section>
+	<section class="popup-recall" id="popupRecall">
+
+				<div class="popup__enter">
+
+					<div class="popup__enter-wrap">
+						<span class="closeRecall">&#10006;</span>
+
+						<div class="popup__enter-bg">
+							<div class="enter__cabinet">
+								<h2>Перезвоните мне</h2>
+								<form class="recall-form" name="valid_email" role="form" method="post" action="">
+									<p>Номер телефона</p>
+									<p>
+										<label for="registrationEmail"></label>
+										<input type="text" class="valid_text validate[required]" placeholder="+38(0__) ___ - __ - __" size="13" id="userPhone" name="registrationEmail">
+									</p>
+
+									<button type="submit" class="registration_button orange">Перезвоните мне</button>
+								</form>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+
+	</section>
 
 <header class="head">
 	<div class="container">
@@ -39,7 +139,7 @@
 		 		</ul>
 		 	</nav>
 
-			<button class="head__btn">
+			<button class="head__btn" id="myBtn">
 				<img src="img/person.png" alt="">
 				<span>Вход</span>
 			</button>
@@ -64,7 +164,7 @@
 				<div class="info__contacts-number">+380 98 170 00 740</div>
 			</div>
 
-			<button class="info__contacts-phone">
+			<button class="info__contacts-phone" id="recallBtn">
 				<img src="img/phone.png" alt="icon-tel">
 				<span>Перезвонить мне</span>
 			</button>
@@ -760,10 +860,10 @@
 							<div class="subscibe__title">Будьте в курсе новостей и новинок!</div>
 							<div class="subscibe__text">Подписывайтесь на рассылку</div>
 							<div class="subscibe__form">
-								<form action="">
+								<form role="form" method="post" action="" id="userSubscribe">
 									<fieldset>
 										<label for="footerForm">
-											<input type="text" placeholder="Укажите свой email для подписки" id="footerForm">
+											<input type="email" placeholder="Укажите свой email для подписки" id="inputEmail">
 										</label>
 										<button>подписаться</button>
 									</fieldset>
@@ -858,12 +958,14 @@
 
 
 <script src="js/jquery.js"></script>
-<!-- <script src="js/jquery-ui.js"></script> -->
-<!-- <script src="js/jquery.maskedinput.js"></script> -->
-<script src="js/script-header.js"></script>
-<script src="js/script-form.js"></script>
-	<!-- <script>$("#userPhone").mask("+38 (099) 999-99-99");</script>
-<script src="js/jquery.validate.js"></script> -->
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<!-- <script src="js/script-header.js"></script>
+<script src="js/script-form.js"></script> -->
+<!-- <script src="js/script-enter.js"></script> -->
+<script src="js/jquery.validate.js"></script>
+<script src="js/script.js"></script>
+<!-- <script src="js/script.js"></script> -->
 
 
 

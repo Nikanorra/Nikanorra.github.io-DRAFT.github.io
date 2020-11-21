@@ -172,7 +172,15 @@
     font-size: 15px; } }
 @media screen and (max-width: 995px) {
   .footer_block-subscibe .subscibe__title {
-    font-size: 13px; } }
+    font-size: 13px; }
+
+  .popup_enter_sml {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+  .popup_cab {
+    margin: 0 auto; } }
 @media screen and (max-width: 970px) {
   .head__wrapp ul {
     display: none; }
@@ -189,7 +197,9 @@
     position: absolute;
     top: 49px;
     left: 0;
-    background: #696969 !important; } }
+    background: #696969 !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    z-index: 100; } }
 @media screen and (max-width: 950px) {
   .menu__body-ul {
     font-size: 14px;
@@ -218,6 +228,15 @@
   .menu__body {
     display: none; }
 
+  .menu__body.active {
+    display: block;
+    position: absolute;
+    width: 40%;
+    left: 0;
+    background: #f5f5f5;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    z-index: 100; }
+
   .footer_block-subscibe .subscibe__form fieldset button {
     font-size: 10px; } }
 @media screen and (max-width: 840px) {
@@ -244,7 +263,24 @@
       width: 100%; }
     .footer__main .container .col-2 {
       margin-top: 20px;
-      width: 30%; } }
+      width: 30%; }
+
+  .popup__enter-bg {
+    flex-direction: column;
+    justify-content: center; }
+
+  .popup__enter-bg .enter__social h2 {
+    margin-top: 23px;
+    margin-bottom: 10px;
+    text-align: center; }
+
+  .popup__enter-bg .registration_link {
+    display: flex;
+    justify-content: space-between; }
+
+  .popup__enter-bg .registration_button {
+    text-align: center;
+    width: 100%; } }
 @media screen and (max-width: 770px) {
   .menu__body-ul {
     font-size: 14px;
@@ -341,7 +377,38 @@
 
   .footer__bottom-rights {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  .popup__enter-bg .enter__cabinet h2,
+  .popup__enter-bg .enter__social h2 {
+    width: 220px;
+    font-size: 18px; }
+
+  .popup__enter-bg .enter__cabinet,
+  .popup__enter-bg .enter__cabinet {
+    padding: 0 10px; }
+
+  .popup__enter span {
+    font-size: 15px; }
+
+  .popup__enter-bg {
+    margin-right: 10px; }
+
+  .enter__social-wrapp {
+    display: flex;
+    justify-content: space-between; }
+    .enter__social-wrapp .registration_fb, .enter__social-wrapp .registration_tw, .enter__social-wrapp .registration_gl {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center; }
+      .enter__social-wrapp .registration_fb i, .enter__social-wrapp .registration_tw i, .enter__social-wrapp .registration_gl i {
+        font-size: 12px; }
+      .enter__social-wrapp .registration_fb span, .enter__social-wrapp .registration_tw span, .enter__social-wrapp .registration_gl span {
+        font-size: 9px;
+        margin-left: 5px; } }
 @media screen and (max-width: 370px) {
   .filter__body-price {
     flex-direction: column;
