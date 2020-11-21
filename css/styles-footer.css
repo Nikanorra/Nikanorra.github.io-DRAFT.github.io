@@ -56,7 +56,8 @@ footer {
     .footer_block-subscibe .subscibe__form fieldset input {
       border: none;
       width: 100%;
-      padding-left: 15px; }
+      padding-left: 15px;
+      background: none; }
     .footer_block-subscibe .subscibe__form fieldset button {
       background: #ff8900;
       color: #fff;
